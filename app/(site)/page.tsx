@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { InferGetStaticPropsType } from "next";
 import { createClient } from "next-sanity";
-import Navbar from "../components/Navbar";
 import HeroSection from "@/components/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
