@@ -6,7 +6,7 @@ const config = defineConfig({
   projectId: "u7rw3exz",
   dataset: "production",
   title: "My Blog Website",
-  apiVersion: "2023-03-09",
+  apiVersion: "2023-04-12",
   basePath: "/admin",
   plugins: [deskTool()],
   schema: { types: schemas },
