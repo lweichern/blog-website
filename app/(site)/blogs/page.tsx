@@ -6,13 +6,14 @@ import Image from "next/image";
 
 export default async function Blogs() {
   const blogPosts = await getBlogPosts();
+  console.log("blogPosts: ", blogPosts);
   return (
     <div className="">
       <h1 className="text-3xl font-bold text-center my-6">Blogs</h1>
 
       <div>
         {blogPosts.map((blog: Blog) => (
-          <Link href={`blogs/${blog.slug}`}>
+          <Link href={`blogs/${blog.slug}`} key={blog.name}>
             {blog.image && (
               <Image
                 src={blog.image}
