@@ -4,7 +4,7 @@ import schemas from "./sanity/schemas";
 
 const config = defineConfig({
   projectId: "u7rw3exz",
-  dataset: "production",
+  dataset: process.env.NEXT_PUBLIC_VERCEL_ENV!,
   title: "My Blog Website",
   apiVersion: "2023-04-12",
   basePath: "/admin",
